@@ -13,7 +13,7 @@ import {
 export default function HeroSection() {
   return (
     <Stack  direction={{ base: "column", md: "row" }} justify='center'>
-        <Flex p={8} flex={1} align={"center"} justify={"center"}>
+        <Flex py={['2','8']} px='2' flex={1} align={"center"} justify={"center"}>
           <Stack spacing={6} w={"full"} maxW={"lg"}>
             <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
               <Text

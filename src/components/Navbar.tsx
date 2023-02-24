@@ -39,22 +39,25 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
+      <Box bg={useColorModeValue("gray.100", "gray.900")} px={['2','2','3']} >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-          <Box as="img" src={ colorMode === "light" ? "./img/logo.png" : "./img/logo-white-t.png"} h={['4','6']} />
+          <Box
+            as="img"
+            src={
+              colorMode === "light"
+                ? "./img/logo.png"
+                : "./img/logo-white-t.png"
+            }
+            h={["4", "6"]}
+          />
           <HStack spacing={4} display={{ base: "none", sm: "flex" }}>
-            <Button as={'a'} href='#home'>
-            HOME
-            </Button>
-            <Button as={'a'} href='#mission'>
-            MISSION
-            </Button>
-            <Button as={'a'} href='#about-us'>
-            ABOUT US
-            </Button>
+            <Link href="/">HOME</Link>
+            <Link href="/mission">MISSION</Link>
+            <Link href="/projects">PROJECTS</Link>
+            <Link href="/about">ABOUT ME</Link>
           </HStack>
           <HStack spacing={4} display={{ base: "block", sm: "none" }}>
-            <HamburgerIcon w={'30'} />
+            <HamburgerIcon w={"30"} />
           </HStack>
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={7}>
@@ -70,18 +73,12 @@ export default function Navbar() {
                   cursor={"pointer"}
                   minW={0}
                 >
-                  <Avatar
-                    size={"sm"}
-                    src={"./img/avatar.jpg"}
-                  />
+                  <Avatar size={"sm"} src={"./img/avatar.jpg"} />
                 </MenuButton>
                 <MenuList alignItems={"center"}>
                   <br />
                   <Center>
-                    <Avatar
-                      size={"2xl"}
-                      src={"./img/avatar.jpg"}
-                    />
+                    <Avatar size={"2xl"} src={"./img/avatar.jpg"} />
                   </Center>
                   <br />
                   <Center>
