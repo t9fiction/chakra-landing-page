@@ -2,6 +2,7 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "@/setters/theme";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 // import {  extendTheme } from "@chakra-ui/react";
 // import theme from "@/components/theme";
 
@@ -31,6 +32,7 @@ export default function RootLayout({
           {/* <Flex ml={['5']} mr={['5']} > */}
           {children}
           {/* </Flex> */}
+          <Footer />
         </ChakraProvider>
       </body>
     </html>
