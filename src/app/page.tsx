@@ -1,5 +1,4 @@
 import Features from "@/components/Features";
-import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import Statistics from "@/components/Statistics";
 import Testimonials from "@/components/Testimonials";
