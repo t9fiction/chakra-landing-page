@@ -1,7 +1,7 @@
 "use client";
 import { ChakraProvider } from "@chakra-ui/react";
-import Header from "@/components/Header";
-import theme from "@/components/theme";
+import theme from "@/setters/theme";
+import Navbar from "@/components/Navbar";
 // import {  extendTheme } from "@chakra-ui/react";
 // import theme from "@/components/theme";
 
@@ -27,7 +27,7 @@ export default function RootLayout({
       <head />
       <body>
         <ChakraProvider theme={theme}>
-          <Header />
+          <Navbar />
           {/* <Flex ml={['5']} mr={['5']} > */}
           {children}
           {/* </Flex> */}
